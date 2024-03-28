@@ -31,9 +31,7 @@ body {
     background-color: #FFFFFF;
 }
 
-address {
-    font-style: normal;
-  }
+
 
 .headclass {
     border-bottom: 1px solid #e7e9fc;
@@ -41,30 +39,22 @@ address {
 }
 
 .menu {
-    display: flex;
+    display: none;
     gap: 40px;
 
 }
 .menucontact{
-    display: flex;
+    display: none;
     gap: 40px;
 }
 
-.studmenu {
-    padding: 24px 0;
-    display: block;
-    position: relative;
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .menu li:first-child a {
     color: #404bbf;; 
 }
 
-.menu::after {
-     
-}
+
 
 .studmenu::after {
     content: "";
@@ -78,21 +68,35 @@ address {
     
 }
 
-.menu .studmenu {
-   
-}
 
 .firsthd {
     color: #404bbf;
 }
 
-.container {
+.container  {
     
-    width: 1158px;
+    max-width: 320px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
     
 
+}
+
+.slogan-container  {
+    
+     max-width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 216px; 
+    height: 160px;
+     
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .headclass .container {
@@ -105,8 +109,8 @@ address {
 }
 
 .navhead {
-    display: flex;
-    align-items: center;
+    display: ;
+    align-items: ;
 
 }
 
@@ -129,8 +133,8 @@ span {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
     position: relative;
+    padding: 17px 0;
     
 }
 
@@ -158,9 +162,7 @@ span {
     color: #4d5ae5;
 }
 
-.partlogo__studio {
-    color: #2e2f42;
-}
+
 
 .partlogo__studio_end {
     color: #FFFFFF;  
@@ -178,23 +180,10 @@ span {
     
 }
 
-.contactpoint {
-    padding: 24px 0;
-    display: block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
 
-.studmenu:hover,
-.studmenu:focus {
-    color: #404BBF;
-}
+
 
 .contacts:focus,
 .contacts:hover {
@@ -241,23 +230,32 @@ span {
 }
 
 .slogan {
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
+    
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
     letter-spacing: 0.02em;
-    color: #ffffff;
-    max-width: 496px;
-    margin: 0 auto;
-    margin-bottom: 48px;
+    text-align: center;
+    color:  #ffffff;
+    margin: 0 16px;
+    margin-bottom: 72px;
 }
  
 .contact-info {
-
+    display: none;
     font-style: normal;
     margin-left: auto;
 }
 
-    
+.open-menu-btn {
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    line-height: 0;
+    border: 0;
+}  
 
 .button {
     background-color: #4D5AE5;
@@ -275,7 +273,7 @@ span {
     display: block;
     margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    padding: 16px 32px;
 }
 
 button:focus {
@@ -299,9 +297,7 @@ a:focus {
     padding: 120px 0;
 }
 
-.hidenfirstsec{
-    
-}
+
 
 .visually-hidden {
     position: absolute;
@@ -317,7 +313,7 @@ a:focus {
 }
 
 .iconsfirst {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -330,6 +326,7 @@ a:focus {
 
 .teamlist {
     display: flex;
+    flex-direction: column;
     gap: 24px; 
     margin: 0;
     padding: 0;
@@ -338,7 +335,6 @@ a:focus {
 .teamlist .teamlistpoint {
     margin: 0;
     padding: 0;
-    width: calc((100% - 72px) / 4);
     
 }
 
@@ -346,12 +342,17 @@ a:focus {
 
 .featureshead {
 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin: auto;
     margin-bottom: 8px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 
 .featurestext{
@@ -360,6 +361,7 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    
 }
 
 .headhtwo {
@@ -970,4 +972,282 @@ a:focus {
     padding: 16px 32px;
     width: 169px;
     
+}
+
+
+
+
+/* header 768 px */
+
+@media screen and (min-width: 768px)  {
+    .container {
+        max-width: 768px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 40px;
+        
+    }
+    .open-menu-btn {
+        display: none;
+
+    }  
+    .contact-info {
+        display: block;
+    }  
+
+    .web-studio {
+        margin-right: 120px;
+    }
+
+    .partlogo__studio {
+        color: #2e2f42;
+    }
+    .studmenu {
+        padding: 24px 0;
+        display: block;
+        position: relative;
+        color: #404bbf;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .studmenu:hover,
+    .studmenu:focus {
+        color: #404BBF;
+    }
+    
+    .menucontact{
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+    
+    
+    .contactpoint {
+        padding: 24px 0;
+        
+        
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+/* header 1158 px */
+    
+
+@media screen and (min-width: 1158px)  {
+
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    .web-studio {
+        margin-left: auto;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        margin-right: 76px; 
+        
+    }
+
+    .menucontact{
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+    }
+    .contactpoint {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .navhead {
+        align-items: center;
+        display: flex; 
+        
+    }
+
+}
+
+/* top 768 px */
+@media screen and (min-width: 768px) {
+    .slogan {
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        max-width: 496px;
+        margin: 0 136px;
+        margin-bottom: 36px; 
+        width: 496px; 
+        height: 120px;
+    }
+
+    .slogan-container  {
+    
+        width: 1158px;
+        
+         max-width: 768px;
+        margin: 0 auto;
+       
+           
+            
+       }
+    
+    }
+
+
+
+
+
+/* top 1158px px */
+@media screen and (min-width: 1158px) {
+
+    .slogan {font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    }
+
+}
+
+
+
+/* firstsect 768 px */
+@media screen and (min-width: 768px) {
+    
+    .container .feautures {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    }
+    
+    
+    
+    
+    .iconsfirst {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        border: 1px solid #8e8f99;
+    
+    }
+    
+    .teamlist {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px; 
+        margin: 0;
+        padding: 0;
+
+        
+    }
+    
+    .teamlist .teamlistpoint {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        width: 356px;
+        height: 120px;
+        width: calc(50% - 12px);
+        margin-bottom: 72px; 
+        
+    }
+    .teamlistpoint {
+        width: 356px;
+height: 120px;
+    }
+    
+    
+    .featureshead {
+    
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-bottom: 8px;
+    }
+    
+    .featurestext{
+    
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    
+    
+
+}
+
+
+/* firstsect 1158px px */
+@media screen and (min-width: 1158px) {
+    .iconsfirst {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        border: 1px solid #8e8f99;
+    
+    }
+    
+    .teamlist {
+        display: flex;
+        gap: 24px; 
+        margin: 0;
+        padding: 0;
+    }
+    
+    .teamlist .teamlistpoint {
+        margin: 0;
+        padding: 0;
+        width: calc((100% - 72px) / 4);
+        
+    }
+    
+    
+    
+    .featureshead {
+    
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-bottom: 8px;
+    }
+    
+    .featurestext{
+    
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    
+
 }

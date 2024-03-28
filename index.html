@@ -28,43 +28,40 @@
 </head>
 <body>
     <header class="headclass"> 
-        <div class="container">
-        <nav class="navhead">
-            
-            
-            
-            
-            <a class="web-studio" href="./index.html">Web<span class="partlogo-studio">Studio</span></a>
-
-
-        
-            <ul class="menu">
-              <li><a href="./index.html" class="studmenu">Studio</a></li>
-              <li><a href="" class="studmenusecond">Portfolio</a></li>
-              <li><a href="" class="studmenuthird">Contacts</a></li>
+        <div class="container header-container">
+            <nav class="navhead">
+                <a class="web-studio" href="./index.html">Web<span class="partlogo-studio">Studio</span></a>
+                <ul class="menu">
+                    <li><a href="./index.html" class="studmenu">Studio</a></li>
+                    <li><a href="" class="studmenusecond">Portfolio</a></li>
+                    <li><a href="" class="studmenuthird">Contacts</a></li>
               
-            </ul>
-          </nav>   
+                </ul>
+            </nav>   
         <address class="contact-info">
             <ul class="menucontact">
                 <li><a href="mailto:info@devstudio.com" class="contactpoint">info@devstudio.com</a></li>
                 <li><a href="tel:+110001111111" class="contactpoint">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
-        
-    </div>
+        <button type="button" class="open-menu-btn">
+            <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+        </button>
+         </div>
     </header>
 
-    <main> 
+     <main> 
        <section class="top">
-        <div class="container">
+        <div class="slogan-container">
             <h1 class="slogan">Effective Solutions for Your Business</h1>
             <button type="button" class="button" onclick="openModal()">Order Service</button>
         </div>    
        </section>       
-            
+           
        <section class="firstsect">
-          <div class="container">
+          <div class="container feautures">
             <h2 class="visually-hidden">Features</h2> 
 
                 <ul class="teamlist">
@@ -109,7 +106,7 @@
                 </ul>
           </div>
        </section>
-         
+        <!--  
        <section class="secondsect">
           <div class="container">
             <h2 class="headhtwo">Our Team</h2>
@@ -430,10 +427,7 @@
         <div class="commentwind">
             <label class="namewfm" for="user-comment">Comment</label>
             
-            <textarea id="user-comment" name="user-comment"  class="textcom" placeholder="Text input">
-                
-                    
-            </textarea>
+            <textarea id="user-comment" name="user-comment"  class="textcom" placeholder="Text input"></textarea>
             
         </div>
 
@@ -442,7 +436,7 @@
             <input id="user-privacy" type="checkbox" value="true" name="user-privacy" class="visually-hidden">
             <label for="user-privacy" class="terms"><span class="policy">
                 <svg width="10" height="8" class="policysvg"><use href="./images/icons.svg#icon-checkmark"></use></svg>
-            </span>I accept the terms and conditions of the
+            </span>&nbspI accept the terms and conditions of the
             <a class="pplink" href="https://example.com">Privacy Policy</a>
             
             </label>
@@ -456,6 +450,6 @@
     </div>
     
 </div>
-
+-->
 </body>
 </html>
