@@ -379,7 +379,7 @@ a:focus {
 
 .secondsect {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    padding: px 0;
 }
 
 
@@ -415,16 +415,13 @@ a:focus {
 
 }
 
-.castlist .devcast {
+.castlist .devcast { 
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
-
+    padding: 0 ;
+  
 }
+
+
 
 .socialmedialist {
     display: flex;
@@ -470,6 +467,8 @@ a:focus {
 
 .divname  {
     padding: 32px 0;
+    width: 100%;
+    box-sizing: border-box;
 
 }
 
@@ -477,9 +476,13 @@ a:focus {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
+    
+    flex-direction: column;
 
 }
+
+
 
 .castimg   {
 
@@ -1174,7 +1177,7 @@ a:focus {
     }
     .teamlistpoint {
         width: 356px;
-height: 120px;
+        height: 120px;
     }
     
     
@@ -1248,6 +1251,74 @@ height: 120px;
         letter-spacing: 0.02em;
         color: #434455;
     }
-    
 
 }
+
+/* secondsect 768px px */
+@media screen and (min-width: 768px) {
+
+        .castimg {
+            width: 264
+        ;
+        }
+
+        .devcast{ 
+            border-radius: 0 0 4px 4px;
+            box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+            gap: 24;
+            border-radius: 0 0 4px 4px;
+            padding: 0px 0px 32px 0px;
+            max-width: 264px;
+            max-height: 428px;
+            margin-bottom: 72px;
+            flex-basis: calc(50% - 24px);
+        }
+
+        .castlist .devcast {
+            flex-basis: calc(50% - 24px);
+            max-width: 264px;
+            max-height: 428px; 
+        }
+
+        .container .ourteam {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        
+        .headhtwo {
+            text-align: center;
+            width: 100%; 
+        }
+        
+        .castlist {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 24px;
+        }
+        
+        
+        }
+
+
+
+
+/* secondsect 1158px px */
+@media screen and (min-width: 1158px) {
+    /* .castlist .devcast {  
+        background-color: #FFFFFF;
+        padding: 0 ;
+        width: calc((100% - 72px) / 4);
+        border-radius: 0px 0px 4px 4px;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        
+    
+    }*/
+    .container .ourteam {
+        
+    }
+}
+
