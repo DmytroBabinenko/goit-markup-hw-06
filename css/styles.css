@@ -108,11 +108,7 @@ body {
     
 }
 
-.navhead {
-    display: ;
-    align-items: ;
 
-}
 
 
 footer {
@@ -506,6 +502,7 @@ a:focus {
 .container .port {
     text-align: center;
     margin: 0 16px;
+    
 }
 
 .thirdsect{
@@ -519,7 +516,7 @@ a:focus {
 .logoportfolio {
     margin-left: 51px;
     margin-right: 51px;
-    display: flex;
+   
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 72px;
@@ -528,7 +525,7 @@ a:focus {
     line-height: 111%;
     letter-spacing: 0.02em;
     text-align: center;
-    color: var(--navy-blue);
+   
 }
 
 .listportfolio {
@@ -593,20 +590,48 @@ a:focus {
     letter-spacing: 0.02em;
     color: #434455 ;
 }
+
+
+/* **************************************************** */
+
+
+
+
+.container .footer {
+    width: 320px;
+    
+    margin: 0 auto;
+    
+}
+
+
 .end {
     background-color:#2e2f42;
     padding: 100px 0; 
+    margin-top: 96px;
+    display: flex;
 }
 
 .end .container {
     
-        display: flex;
-        align-items: baseline;
+     display: flex; 
+    align-items: baseline;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     height: 664px; 
 }
 
 .endcont {
-    margin-right: 120px;
+   ;
+    display: block;
+}
 
+.sm-end {
+    width: 208px;
+    height: 80px; 
+     margin: 0px 40px 0px 40px;   
 }
 
 .sm-paragraf {
@@ -615,15 +640,20 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px;
+    margin: 0px 0px 16px 16px;
+    text-align: center;
 
 }
 
 .endlist {
     display: flex;
     gap: 16px;
-
+    width: 208px;
+    height: 40px;
+    
 }
+
+
 
 .li-endlist {
     width: 40px;
@@ -663,7 +693,11 @@ a:focus {
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
-    max-width: 264px
+    text-align: left;
+    width: 288px;
+    height: 72px;
+    margin: 0px 16px 72px 0px;
+
 }
 
 .partlogosecond {
@@ -685,9 +719,9 @@ a:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
-    display: inline-block;
-    margin-bottom: 16px;
+    margin: 96px 86px 16px 86px; 
+    display: block;
+    
 }
 
 .webstudiofooter:hover {
@@ -699,22 +733,24 @@ a:focus {
 
 
 .subs {
-    margin-left: 80px;
+    margin: 0 16px 96px 16px;
 
 }
 
 .subsparagraf {
-    margin-bottom: 16px;
+    margin: 72px 106px 16px 107px ;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
+    text-align: center;
 }
 
 .subsform  {
-    display: flex;
+    display: block;
     gap: 24px;
+
 }
 
 .subslabel {
@@ -757,7 +793,7 @@ a:focus {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
-
+    margin: 16px 62px 0px 61px;
 }
 
 .svgsubs {
@@ -1015,6 +1051,13 @@ a:focus {
         display: none;
 
     }  
+
+    .navhead {
+        display: flex ;
+       
+    
+    }
+
     .contact-info {
         display: block;
     }  
@@ -1242,6 +1285,7 @@ a:focus {
         gap: 24px; 
         margin: 0;
         padding: 0;
+        margin-bottom: 120px;
     }
     
     .teamlist .teamlistpoint {
@@ -1290,11 +1334,11 @@ a:focus {
             max-width: 264px;
             max-height: 428px;
             margin-bottom: 72px;
-            /* flex-basis: calc(50% - 24px); */
+            
         }
 
         .castlist .devcast {
-            /* flex-basis: calc(50% - 24px); */
+        
             max-width: 264px;
             max-height: 428px; 
         }
@@ -1317,6 +1361,7 @@ a:focus {
             justify-content: center;
             gap:  64px 24px;
             flex-direction: row;
+            margin-bottom: 96px;
             
         }
         
@@ -1340,55 +1385,55 @@ a:focus {
     
     
     }
-
+    .castlist {
+       
+    }
 }
 
 /* thirdsect 768px  */
 @media screen and (min-width: 768px) {
 
-    .container .port {
-        text-align: center;
-        margin: 0 16px;
-    }
-    
-    .thirdsect{
+    .container.port {
         display: flex;
         flex-direction: column;
-        gap: 24px; 
-        margin: 0;
-        padding: 0;
+        max-width: 1158px; 
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
-    
-    .logoportfolio {
-        margin-left: 51px;
-        margin-right: 51px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+    .imgbox {
+        width: 356px; 
+        height: 300px;
+    }
+    .lppoint {
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        padding: 0px 0px 32px 0px;
+        width: calc(50% - 10px); 
+        height: 420px;
         margin-bottom: 72px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 111%;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: var(--navy-blue);
+        width: 356px;
     }
-    
-    .listportfolio {
+    .thirdsect {
+        display: flex;
+        gap: 24px;
         margin: 0;
         padding: 0;
+    }
+    .logoportfolio {
+        text-align: center;
+        width: 100%;
+    }
+    .listportfolio {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 48px;
-        list-style: none;
+        justify-content: center;
+        gap: 64px 24px; 
     }
     .listportfolio .lppoint {
         margin: 0 16px;
         padding: 0;
-        /* width: calc((100% - 48px) / 3); */
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
     }
     
 
@@ -1398,7 +1443,14 @@ a:focus {
 /* thirdsect 1158px px */
 @media screen and (min-width: 1158px) {
    
-   
+    .container .port {
+    
+        width: 1158px;
+        margin: 0 auto;
+        padding: 0 15px;
+        
+    
+    }
 
         .logoportfolio {
     
@@ -1424,8 +1476,141 @@ a:focus {
             margin: 0;
             padding: 0;
             width: calc((100% - 48px) / 3);
-            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+           
             
         }
 
+}
+
+/* footer 768px px */
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        justify-content: start;
+    }
+
+
+    .container.footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: none;
+        margin: 0 auto;
+        max-width: 768px;
+        align-items: center;  
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .endcont {
+        margin: 0 0 0 0;
+      }
+    
+    .endpage {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .webstudiofooter {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .sm-paragraf {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .sm-end {
+        margin: 0;
+        text-align: left;
+  
+    }
+    .subsparagraf {
+        margin: 0;
+        text-align: left;
+    }
+
+    .subs {
+       
+        display: block ;
+    }
+
+    .subsbutton {
+        display: inline;
+        height: 40px;
+    }
+}
+/* footer 1158px px */
+
+@media screen and (min-width: 1158px) {
+
+    .container {
+        justify-content: start; }
+   
+   
+    .container.footer {
+        max-height: 312px;
+        margin: 0 auto;
+        max-width: 1440px;
+          
+       
+        gap: 24px;
+        
+      }
+
+
+
+
+
+
+.subs {
+    margin: 0 0 0 80px;
+    width: 453px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.subsform  {
+    
+    display: flex;
+    
+    
+}
+
+.subslabel {
+
+}
+
+.subsinput {
+   
+
+}
+
+.subsinput::placeholder {
+    color: #ffffff; 
+}
+
+.subsbutton {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 0 0 0;
+
+}
+
+.subsparagraf {
+    margin:0 auto;
+
+}
+
+
+
+    
 }
