@@ -25,6 +25,20 @@
         }
     </script>
 
+
+        <script>
+            function toggleMenu() {
+            var menu = document.getElementById('mymobile');
+                if (menu.style.display === 'none') {
+                     menu.style.display = 'block';
+                } else {
+                menu.style.display = 'none';
+                }
+                    }
+</script>
+
+
+
 </head>
 <body>
     <header class="headclass"> 
@@ -113,7 +127,12 @@
                 <ul class="castlist"> 
                     <li class="devcast">
                         
-                        <img class="castimg" src="./images/1.jpg" alt="mark" width="264">
+                        
+                        <picture>
+                            <source srcset="/images/1.jpg 1x, /images/1x2.jpg 2x" media="(min-width: 768px)">
+                            <source>
+                            <img class="castimg" src="./images/1.jpg" alt="mark" width="264">
+                        </picture>
                         <div class="divname">
                             <h3 class="headteam">Mark Guerrero</h3>
                                 <p class="teamtext">Product Designer</p>
@@ -147,8 +166,12 @@
                         </div>
                     </li>
                     <li class="devcast">
-                    
-                        <img class="castimg" src="./images/2.jpg" alt="tom" width="264">
+                        <picture>
+                            <source srcset="/images/2.jpg 1x, /images/2x2.jpg 2x" media="(min-width: 768px)">
+                            <source>
+                            <img class="castimg" src="./images/2.jpg" alt="mark" width="264">
+                        </picture>
+                        
                         <div class="divname">
                             <h3 class="headteam">Tom Ford</h3>
                         <p class="teamtext">Frontend Developer</p>
@@ -182,8 +205,12 @@
                         </div>    
                     </li>    
                     <li class="devcast">
-                    
-                        <img class="castimg" src="./images/3.jpg"  alt="camila" width="264">
+                        <picture>
+                            <source srcset="/images/3.jpg 1x, /images/3x2.jpg 2x" media="(min-width: 768px)">
+                            <source>
+                            <img class="castimg" src="./images/3.jpg" alt="mark" width="264">
+                        </picture>
+                        
                         <div class="divname">
                             <h3 class="headteam">Camila Garcia</h3>
                         <p class="teamtext">Marketing</p>
@@ -217,8 +244,12 @@
                         </div>    
                     </li>    
                     <li class="devcast">                                   
-                    
-                        <img class="castimg" src="./images/4.jpg"  alt="daniel" width="264">
+                        <picture>
+                            <source srcset="/images/4.jpg 1x, /images/4x2.jpg 2x" media="(min-width: 768px)">
+                            <source>
+                            <img class="castimg" src="./images/4.jpg" alt="Daniel" width="264">
+                        </picture>  
+                       
                         <div class="divname">
                             <h3 class="headteam">Daniel Wilson</h3>
                         <p class="teamtext">UI Designer</p>
@@ -264,7 +295,15 @@
                     <li class="lppoint">
                     
                         <div class="imgbox">
-                            <img src="./images/op1.jpg" alt="tablet" width="360">
+                            <picture>
+                                
+                                <source media="(min-width: 768px)" srcset="./images/op1.jpg, ./images/op1x2.jpg 2x">
+                               
+                                <source media="(max-width: 767px)" srcset="./images/opmob1.jpg, ./images/opmob1x2.jpg 2x">
+                                
+                                <img src="./images/op1.jpg" alt="tablet" width="360">
+                              </picture>  
+                            
                             <p class="imgdescr">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="containerlast">
@@ -275,7 +314,14 @@
                     </li>
                     <li class="lppoint">
                         <div class="imgbox">
-                            <img src="./images/op2.jpg" alt="phones" width="360">
+                            <picture>
+                                
+                                <source media="(min-width: 768px)" srcset="./images/op2.jpg, ./images/op2x2.jpg 2x">
+                               
+                                <source media="(max-width: 767px)" srcset="./images/opmob2.jpg, ./images/opmob2x2.jpg 2x">
+                                
+                                <img src="./images/op2.jpg" alt="payment" >
+                              </picture> 
                             <p class="imgdescr">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class="containerlast">
@@ -285,7 +331,14 @@
                     </li>    
                     <li class="lppoint">
                         <div class="imgbox">
-                            <img src="./images/op3.jpg"  alt="laptop" width="360">
+                            <picture>
+                                
+                                <source media="(min-width: 768px)" srcset="./images/op3.jpg, ./images/op3x2.jpg 2x">
+                               
+                                <source media="(max-width: 767px)" srcset="./images/opmob3.jpg, ./images/opmob3x2.jpg 2x">
+                                
+                                <img src="./images/op3.jpg" alt="laptop" >
+                              </picture> 
                             <p class="imgdescr">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class="containerlast">
@@ -295,7 +348,14 @@
                     </li>    
                     <li class="lppoint">                                   
                         <div class="imgbox">    
-                            <img src="./images/op4.jpg"  alt="car" width="360">
+                            <picture>
+                                
+                                <source media="(min-width: 768px)" srcset="./images/op4.jpg, ./images/op4x2.jpg 2x">
+                               
+                                <source media="(max-width: 767px)" srcset="./images/opmob4.jpg, ./images/opmob4x2.jpg 2x">
+                                
+                                <img src="./images/op5.jpg" alt="car" width="360">
+                              </picture> 
                             <p class="imgdescr">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                         <div class="containerlast">
@@ -306,7 +366,14 @@
                     
                     <li class="lppoint">                                   
                         <div class="imgbox">
-                            <img src="./images/op5.jpg"  alt="laptop" width="360">
+                            <picture>
+                                
+                                <source media="(min-width: 768px)" srcset="./images/op5.jpg, ./images/op5x2.jpg 2x">
+                               
+                                <source media="(max-width: 767px)" srcset="./images/opmob5.jpg, ./images/opmob5x2.jpg 2x">
+                                
+                                <img src="./images/op5.jpg" alt="Screen" >
+                              </picture> 
                             <p class="imgdescr">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                          </div>
                         <div class="containerlast">
@@ -318,7 +385,14 @@
                     <li  class="lppoint">                                   
 
                         <div class="imgbox">
-                            <img src="./images/op6.jpg"  alt="woomen" width="360">
+                            <picture>
+                                
+                                <source media="(min-width: 768px)" srcset="./images/op6.jpg, ./images/op6x2.jpg 2x">
+                               
+                                <source media="(max-width: 767px)" srcset="./images/opmob6.jpg, ./images/opmob6x2.jpg 2x">
+                                
+                                <img src="./images/op6.jpg" alt="Courses" >
+                              </picture> 
                             <p class="imgdescr">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>    
                         <div class="containerlast">
@@ -455,11 +529,7 @@
 <div class="menumob" id="mymobile" style="display: none;" >
 
     <div class="mobi">
-        <!-- <button type="button" class="windowbutton" onclick="closeModal()">  
-        <svg width="8" height="8" class="svgbuttonwindow">
-            <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-        </button>-->
+        
 
         <ul class="list-menu">
              <li><a href="./index.html" class="st">Studio</a></li>
