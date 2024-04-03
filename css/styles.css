@@ -802,235 +802,6 @@ a:focus {
 
 /*------------------------*/
 
-.windcontainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: none;
-}
-
-.window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 408px;
-    min-height: 584px;
-    background: #fcfcfc;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
-}
-
-.windowbutton {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e7e9fc;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.windowbutton:hover {
-    background-color: #404bbf;
-    border: none;
-    fill: #ffffff
-}
-
-.windowbutton:focus {
-    background-color: #404bbf;
-    border: none;
-    fill: #ffffff
-
-}
-
-.svgbuttonwindow {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-.modalparagraf {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    margin-bottom: 16px;
-}
-
-.windformmodal {
-    margin-bottom: 8px;
-}
-
-.namewfm {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color:#8e8f99;
-    display: block;
-    margin-bottom: 4px;
-
-}
-
-.onediv {
-    position: relative;
-
-}
-
-.inputonediv {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    background-color: transparent;
-    padding-left: 38px;
-    outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.inputonediv:focus {
-    border-color: #4D5AE5;
-    
-}
-
-.inputonediv:focus + .onesvg { 
-    fill:#4D5AE5;
-    
- }
-
-.onesvg {
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #2E2F42;
-}
-
-.onesvg:focus {
-    fill: #4D5AE5;
-}
-
-.onesvg:hover {
-    fill:#4D5AE5
-}
-
-.commentwind {
-    margin-bottom: 16px
-}
-
-.textcom {
-    width: 100%;
-    height: 120px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    background-color: transparent;
-    padding: 8px 16px;
-    outline: transparent;
-    resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
-}
-
-.textcom:focus {
-    border-color: #4D5AE5;
-}
-
-.checkwind {
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-}
-
-.fivepoint {
-    margin-bottom: 24px;
-
-}
-
-.terms {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    margin-left: 10px;
-}
-
-.policy {
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-
-}
-
-
-
-
-.policysvg {
-
-}
-
-#user-privacy:checked + .terms .policy {
-    background-color: #404bbf;
-    border: none;
-    fill: #F4F4FD;
-}
-
-
-.pplink {
-    text-decoration: underline;
-    text-decoration-color: #4d5ae5;
-    color: #4d5ae5; 
-}
-
-.sendbut {
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4D5AE5;
-    border: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    margin: 0 auto;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    padding: 16px 32px;
-    width: 169px;
-    
-}
-
 
 
 
@@ -1623,7 +1394,7 @@ a:focus {
     top: 0;
     left: 0;
     width: 320px;
-    height: 100%;
+    
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     right: 0;
@@ -1662,13 +1433,13 @@ a:focus {
 
 .adressmobile {
     
-    font-style: "Roboto", sans-serif;;
+    font-style: normal;
     margin-top: 168px;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
-    color: var(--navy-blue)
+    color: black
     
 }
 
@@ -1681,7 +1452,7 @@ a:focus {
     font-family: 'Roboto', sans-serif; 
     font-weight: 500; /
     font-size: 20px; 
-    color: 
+    color: var(--navy-blue)
 }
 
 .adressmobile li {
@@ -1707,7 +1478,7 @@ a:focus {
     font-size: 36px;
     line-height: 111%;
     letter-spacing: 0.02em;
-    color: var(--ocean);
+    color: #4D5AE5;
 }
 
 .list-menu li a:hover {
@@ -1720,4 +1491,253 @@ a:focus {
 
 .mobi  .socialmedialist {
     margin: 48px 0 40px 0;
+}
+
+a.mailmob {
+     color: #434455; 
+      } 
+
+
+      /* ******MY MODALLLL********** */
+
+.windcontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: none;
+}
+
+.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    min-height: 584px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+}
+
+.windowbutton {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.windowbutton:hover {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff
+}
+
+.windowbutton:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff
+
+}
+
+.svgbuttonwindow {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.modalparagraf {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 16px;
+}
+
+.windformmodal {
+    margin-bottom: 8px;
+}
+
+.namewfm {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:#8e8f99;
+    display: block;
+    margin-bottom: 4px;
+
+}
+
+.onediv {
+    position: relative;
+
+}
+
+.inputonediv {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inputonediv:focus {
+    border-color: #4D5AE5;
+    
+}
+
+.inputonediv:focus + .onesvg { 
+    fill:#4D5AE5;
+    
+ }
+
+.onesvg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2E2F42;
+}
+
+.onesvg:focus {
+    fill: #4D5AE5;
+}
+
+.onesvg:hover {
+    fill:#4D5AE5
+}
+
+.commentwind {
+    margin-bottom: 16px
+}
+
+.textcom {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+}
+
+.textcom:focus {
+    border-color: #4D5AE5;
+}
+
+.checkwind {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.fivepoint {
+    margin-bottom: 24px;
+
+}
+
+.terms {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-left: 10px;
+}
+
+.policy {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+
+}
+
+
+
+
+.policysvg {
+
+}
+
+#user-privacy:checked + .terms .policy {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+
+.pplink {
+    text-decoration: underline;
+    text-decoration-color: #4d5ae5;
+    color: #4d5ae5; 
+}
+
+.sendbut {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    width: 169px;
+    
+}
+
+
+
+
+ /* footer window px */
+
+ @media  screen  and (min-width: 768px)  {     
+
+ .window {
+    width: 408px;
+ }
+
 }
