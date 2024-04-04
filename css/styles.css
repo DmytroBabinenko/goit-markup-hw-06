@@ -373,7 +373,7 @@ a:focus {
 
 .secondsect {
     background-color: #F4F4FD;
-    
+    padding: 96px 0;
 }
 
 
@@ -468,7 +468,7 @@ a:focus {
 
 .castlist {
     margin: 0;
-    padding-bottom: 96px;
+    
     display: flex;
     /* gap: 24px; */
     
@@ -1132,7 +1132,7 @@ a:focus {
             justify-content: center;
             gap:  64px 24px;
             flex-direction: row;
-            padding-bottom: 96;
+            
             
         }
         
@@ -1160,6 +1160,7 @@ a:focus {
         display: grid;
         grid-template-columns: repeat(4, 264px);
         grid-gap: 24px;
+        padding-bottom: 120px;
     }
 }
 
