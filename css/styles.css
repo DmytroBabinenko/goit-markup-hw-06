@@ -373,7 +373,7 @@ a:focus {
 
 .secondsect {
     background-color: #F4F4FD;
-    padding: 96px;
+    
 }
 
 
@@ -468,7 +468,7 @@ a:focus {
 
 .castlist {
     margin: 0;
-    padding: 0;
+    padding-bottom: 96px;
     display: flex;
     /* gap: 24px; */
     
@@ -1132,7 +1132,7 @@ a:focus {
             justify-content: center;
             gap:  64px 24px;
             flex-direction: row;
-            
+            padding-bottom: 96;
             
         }
         
@@ -1146,11 +1146,11 @@ a:focus {
 @media screen and (min-width: 1158px) {
     .castlist .devcast {  
         background-color: #FFFFFF;
-        padding: 0 ;
+        
         /* width: calc((100% - 72px) / 4); */
         border-radius: 0px 0px 4px 4px;
         margin: 0;
-        padding: 0;
+        padding-bottom: 120;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         width: 264px;
     
@@ -1170,7 +1170,7 @@ a:focus {
         display: flex;
         flex-direction: column;
         max-width: 1158px; 
-        margin: 0 auto;
+        margin-top: 120px;
         padding: 0 15px;
         box-sizing: border-box;
     }
