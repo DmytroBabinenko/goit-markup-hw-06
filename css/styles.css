@@ -346,9 +346,7 @@ a:focus {
     text-align: center;
     margin: auto;
     margin-bottom: 8px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .featurestext{
@@ -375,7 +373,7 @@ a:focus {
 
 .secondsect {
     background-color: #F4F4FD;
-    padding: px 0;
+    padding: 96px;
 }
 
 
@@ -878,8 +876,7 @@ a:focus {
         max-width: 1158px;
         padding: 0 15px;
         justify-content: space-between;
-        display: flex;
-        align-items: center;
+        margin: 0 auto;
     }
     .web-studio {
         margin-left: auto;
@@ -938,6 +935,10 @@ a:focus {
             
        }
     
+       .top {
+        padding: 112px 136px 204px 136px;
+       }
+
     }
 
 
@@ -990,7 +991,7 @@ a:focus {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 6px; 
+        gap: 64px 24px; 
         margin: 0;
         padding: 0;
 
@@ -998,29 +999,28 @@ a:focus {
     }
     
     .teamlist .teamlistpoint {
-        margin: 0;
-        padding: 0;
-        width: 50%;
+        
         width: 356px;
-        height: 120px;
+        
         width: calc(50% - 12px);
-        margin-bottom: 72px; 
+        
         
     }
     .teamlistpoint {
         width: 356px;
-        height: 120px;
+        
     }
     
     
     .featureshead {
     
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;;
         letter-spacing: 0.02em;
         color: #2e2f42;
         margin-bottom: 8px;
+        text-align: left;
     }
     
     .featurestext{
@@ -1029,6 +1029,7 @@ a:focus {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+        
     }
     
     
@@ -1098,19 +1099,19 @@ a:focus {
         .devcast{ 
             border-radius: 0 0 4px 4px;
             box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-            gap: 24;
+            
             border-radius: 0 0 4px 4px;
-            padding: 0px 0px 32px 0px;
+            
             max-width: 264px;
-            max-height: 428px;
-            margin-bottom: 72px;
+            
+            
             
         }
 
         .castlist .devcast {
         
             max-width: 264px;
-            max-height: 428px; 
+             
         }
 
         .container .ourteam {
@@ -1131,7 +1132,7 @@ a:focus {
             justify-content: center;
             gap:  64px 24px;
             flex-direction: row;
-            margin-bottom: 96px;
+            
             
         }
         
@@ -1151,7 +1152,7 @@ a:focus {
         margin: 0;
         padding: 0;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-        
+        max-width: 264;
     
     
     }
