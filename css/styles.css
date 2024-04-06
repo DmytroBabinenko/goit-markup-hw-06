@@ -481,9 +481,8 @@ a:focus {
     align-items: center;
     display: flex;
     gap: 72px;
-
-    
     flex-direction: column;
+    
 
 }
 
@@ -891,6 +890,14 @@ a:focus {
     
 
 @media screen and (min-width: 1158px)  {
+
+    .thirdsect {
+        flex-wrap: wrap;
+        align-content: center;
+
+    }
+
+
 
     .container {
         max-width: 1158px;
