@@ -825,6 +825,10 @@ a:focus {
         width: 356px;
     }
     
+    .end .container {
+        display: flex;
+        align-items: baseline;
+    }
     
     .container {
         max-width: 768px;
@@ -1438,7 +1442,7 @@ a:focus {
 }
 
 .subsparagraf {
-
+    margin-bottom: 16px;
 }
 
    
