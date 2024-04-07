@@ -36,6 +36,7 @@ body {
 .headclass {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    padding:16px  0 16px  16px ;
 }
 
 .menu {
@@ -209,35 +210,19 @@ span {
 
 
 
-.top {
-        background-color:#2e2f42;
-        padding: 72px 0;
-        margin: 0 auto;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimage.jpg);
-         display: flex;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        max-width: 1440px;
-        justify-content: center; 
-        
-    
-}
+
 
 .slogan {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 36px;
-    line-height: 111%;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color:  #ffffff;
-    height: 216px;
-    width: 160px;
-    margin: 0 52px 0 52px
-
+    
+    width: 216px;
+    margin: 0 auto 72px;
     
 }
  
@@ -277,7 +262,7 @@ span {
    
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    margin: 0 60px 72px 59px;
+    margin: 0 auto;
 }
 
 button:focus {
@@ -339,9 +324,8 @@ a:focus {
 
 .teamlist .teamlistpoint {
    
- width: 320px;
- display: block;
-  margin: 0 auto;  
+ width:288px;
+   
 }
 
 
@@ -906,9 +890,10 @@ a:focus {
 
     .container {
         max-width: 1158px;
-        padding: 0 15px;
+        
         justify-content: space-between;
         margin: 0 auto;
+
     }
     .web-studio {
         margin-left: auto;
@@ -950,7 +935,7 @@ a:focus {
         letter-spacing: 0.02em;
         color: #ffffff;
         max-width: 496px;
-        margin: 0 136px;
+        margin: 0 auto;
         margin-bottom: 36px; 
         width: 496px; 
         height: 120px;
@@ -960,7 +945,7 @@ a:focus {
     
         width: 1158px;
         
-         max-width: 768px;
+        max-width: 768px;
         margin: 0 auto;
        
            
@@ -968,7 +953,7 @@ a:focus {
        }
     
        .top {
-        
+         padding: 112px 136px 204px 136px;
        }
 
     }
@@ -992,7 +977,9 @@ a:focus {
 
 }
 
-
+.top {
+    /* padding: 188px; */
+  }
 
 /* firstsect 768 px */
 @media screen and (min-width: 768px) {
@@ -1096,7 +1083,7 @@ a:focus {
         gap: 24px; 
         margin: 0;
         padding: 0;
-        margin-bottom: 120px;
+        
     }
     
     .teamlist .teamlistpoint {
@@ -1119,11 +1106,16 @@ a:focus {
     }
     
     .featurestext{
-    
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
+    }
+
+    .firstsect {
+        padding: 120px  0 ;
+    
     }
 
 }
@@ -1143,9 +1135,12 @@ a:focus {
             border-radius: 0 0 4px 4px;
             
             max-width: 264px;
-            
-            
-            
+          
+        }
+
+
+        .secondsect { 
+            padding: 120px 0;
         }
 
         .castlist .devcast {
@@ -1184,13 +1179,14 @@ a:focus {
 
 /* secondsect 1158px px */
 @media screen and (min-width: 1158px) {
+   
     .castlist .devcast {  
         background-color: #FFFFFF;
         
         /* width: calc((100% - 72px) / 4); */
         border-radius: 0px 0px 4px 4px;
         margin: 0;
-        padding-bottom: 120;
+        
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         width: 264px;
     
@@ -1199,21 +1195,25 @@ a:focus {
         display: grid;
         grid-template-columns: repeat(4, 264px);
         grid-gap: 24px;
-        padding-bottom: 120px;
+        
     }
+
+
+
 }
 
 /* thirdsect 768px  */
 @media screen and (min-width: 768px) {
 
     .container.port {
-        display: flex;
-        flex-direction: column;
+        
+        
         max-width: 1158px; 
-        margin: 96px 0px 96px 0px;
-        padding: 0 15px;
-        box-sizing: border-box;
+        
+        /* padding: 0 15px; */
+        
     }
+
     .imgbox {
         width: 356px; 
         height: 300px;
@@ -1227,11 +1227,12 @@ a:focus {
     }
 
     .thirdsect {
-        display: flex;
-        gap: 24px;
-        margin: 0;
-        padding: 0;
+        /* display: flex; */
+        /* gap: 24px; */
+        /* margin: 0; */
+        
     }
+
     .logoportfolio {
         text-align: center;
         width: 100%;
@@ -1379,23 +1380,37 @@ a:focus {
 @media screen and (min-width: 1158px) {
 
     .container {
-        min-width: 1158px;
+        
         margin-left: auto;
         margin-right: auto;
     }
    
-   
+   .end {
+      
+
+      
+   }
+
+   footer {
+    min-width: ;
+   }
+
+
+
     .container.footer {
         
         margin: 0 auto;
-        max-width: 1440px;
-        gap: 24px;
+        max-width: 1158px ;
+        gap: 0;
+        
         
       }
 
       .end .container {
         display: flex;
         align-items: baseline;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
 
@@ -1813,3 +1828,53 @@ a.mailmob {
  }
 
 }
+
+.top {
+    background-color:#2e2f42;
+    padding: 72px 0;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desk@1x.jpg);
+     display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    justify-content: center; 
+    
+
+}
+
+/*=======Hero background==========*/
+@media (min-device-pixel-ratio: 2) {
+    .top {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-mob@2x.jpg);
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .top {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tab@2x.jpg);
+    }
+  }
+  
+  @media screen and (min-width: 1158px) {
+    .top {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-desk@2x.jpg);
+
+        
+    }
+  }
