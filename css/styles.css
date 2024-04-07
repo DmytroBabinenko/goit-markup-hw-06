@@ -1386,13 +1386,20 @@ a:focus {
    
    
     .container.footer {
-        max-height: 312px;
+        
         margin: 0 auto;
         max-width: 1440px;
-       
         gap: 24px;
         
       }
+
+      .end .container {
+        display: flex;
+        align-items: baseline;
+    }
+
+
+
 
       .thirdsec {
         flex-wrap: wrap;
@@ -1442,7 +1449,7 @@ a:focus {
 }
 
 .subsparagraf {
-    margin-bottom: 16px;
+    margin-bottom: ;
 }
 
    
