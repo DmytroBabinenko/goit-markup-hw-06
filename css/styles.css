@@ -1328,7 +1328,7 @@ a:focus {
         padding-left: 15px;
         justify-content: flex-start;
         align-items: center;
-
+        padding-left: 120px;
       }
 
 
@@ -1427,6 +1427,7 @@ a:focus {
         align-items: baseline;
         padding-top: 100px;
         padding-bottom: 100px;
+        padding-left: 15px;
     }
 
 
