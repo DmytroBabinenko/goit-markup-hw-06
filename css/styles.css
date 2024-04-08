@@ -283,7 +283,7 @@ a:focus {
 
 
 .firstsect {
-    padding: 96px  0 ;
+    padding: 120px  0 ;
 
 }
 
@@ -696,8 +696,8 @@ a:focus {
 
 
 .thirdsect {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
 }
 .webstudiofooter {
@@ -818,6 +818,14 @@ a:focus {
         max-width: 768px;
     }
 
+    
+    .headclass {
+
+        padding: 0 0 0 0;
+
+    }
+    
+    
     .menu {
       display: flex;
       gap: 40px;
@@ -978,7 +986,7 @@ a:focus {
 }
 
 .top {
-    /* padding: 188px; */
+     padding: 120px 0; 
   }
 
 /* firstsect 768 px */
@@ -1317,7 +1325,7 @@ a:focus {
         max-width: 768px;
         flex-direction: row;
         gap: 72px 24px;
-        padding-left: 108px;
+        padding-left: 15px;
         justify-content: flex-start;
         align-items: center;
 
@@ -1380,16 +1388,24 @@ a:focus {
 @media screen and (min-width: 1158px) {
 
     .container {
-        
+        padding-left: 15px;
+        padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
     }
    
    .end {
       
-
+    
       
    }
+
+   .endcont {
+
+    margin: right 120px;
+   }
+
+
 
    footer {
     
@@ -1833,7 +1849,7 @@ a.mailmob {
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .top {
     background-color:#2e2f42;
-    padding: 72px 0;
+    padding: 120px 0;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob@1x.jpg);
      display: flex;
